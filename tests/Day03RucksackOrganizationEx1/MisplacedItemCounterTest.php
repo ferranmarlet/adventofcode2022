@@ -36,11 +36,16 @@ class MisplacedItemCounterTest extends TestCase
     public function should_count_repeated_items_from_multiple_bags(): void
     {
         $bags = [
-            'abcb',
-            'AbAc',
+            'vJrwpWtwJgWrhcsFMMfFFhFp',
+            'jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL',
+            'PmmdzqPrVvPwwTWBwg',
+            'wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn',
+            'ttgJtRGJQctTZtZT',
+            'CrZsJsPPZsGzwwsLwLmpwMDw'
         ];
+        $valueOfMisplacedItems = 157;
         self::assertEquals(
-            self::VALUE_FOR_A + self::VALUE_FOR_b,
+            $valueOfMisplacedItems,
             MisplacedItemCounter::execute($bags)
         );
     }

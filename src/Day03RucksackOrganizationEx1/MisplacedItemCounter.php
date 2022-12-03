@@ -8,8 +8,19 @@ class MisplacedItemCounter
 {
     public static function execute(array $bags): int
     {
+        $totalMisplacedItemValue = 0;
+
+        foreach ($bags as $bag) {
+            $totalMisplacedItemValue += self::getDuplicatedItemValueFromBag($bag);
+        }
+
+        return $totalMisplacedItemValue;
+    }
+
+    private static function getDuplicatedItemValueFromBag(string $bag): int
+    {
         return self::getValueFromItem(
-            self::findRepeatedItem($bags[0])
+            self::findRepeatedItem($bag)
         );
     }
 

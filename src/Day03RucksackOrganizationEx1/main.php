@@ -6,5 +6,5 @@ namespace Kata\Day03RucksackOrganizationEx1;
 
 require __DIR__ . '/../../vendor/autoload.php';
 
-echo RockPaperSissorsCounter::getPointsFromGuide(input::$data) . "\r\n";
+echo MisplacedItemCounter::execute(input::$data) . "\r\n";
 
