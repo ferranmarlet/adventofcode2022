@@ -3,7 +3,6 @@
     "description": "Simple setup for php katas",
     "type": "project",
     "minimum-stability": "dev",
-    "require": {},
     "require-dev": {
         "phpunit/phpunit": "^9.0"
     },
@@ -22,5 +21,8 @@
         "psr-4": {
             "Tests\\": "./tests"
         }
+    },
+    "require": {
+        "nicmart/tree": "dev-master"
     }
 }
