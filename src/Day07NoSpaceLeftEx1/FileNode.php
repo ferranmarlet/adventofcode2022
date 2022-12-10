@@ -51,4 +51,9 @@ class FileNode extends Node
     {
         return parent::root();
     }
+
+    public function isFile(): bool
+    {
+        return $this->size != 0;
+    }
 }
