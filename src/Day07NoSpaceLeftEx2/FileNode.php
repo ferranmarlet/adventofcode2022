@@ -57,6 +57,11 @@ class FileNode extends Node
         return $this->size != 0;
     }
 
+    public function isDirectory(): bool
+    {
+        return $this->getSize() == 0;
+    }
+
     public function getFileTreeTotalWeight(): int
     {
         $totalDirectorySize = 0;
